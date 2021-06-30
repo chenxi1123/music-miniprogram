@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/music/music"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#ff4c91",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/06.png",
+        "selectedIconPath": "images/06.png",
+        "text": "音乐"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "iconPath": "images/06.png",
+        "selectedIconPath": "images/06.png",
+        "text": "每日MV"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.4.5",
+      "provider": "wxa75efa648b60994b"
+    },
+    "kugouPlayer": {
+        "version": "1.0.12",
+        "provider": "wx4f38007b839da9d3"
+      }
+  },
+    "usingComponents": {
+       "kugou-play": "plugin://kugouPlayer/kugou-play"
+     },
+     "navigateToMiniProgramAppIdList": ["wx4f38007b839da9d3"],
+     "window": {
+       "navigationBarBackgroundColor": "#fff",
+       "navigationBarTextStyle": "black",
+       "navigationBarTitleText": "小程序",
+       "backgroundColor": "#eeeeee",
+       "backgroundTextStyle": "light",
+       "enablePullDownRefresh": false
+     }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "MV",
+  "usingComponents":{
+     "txv-video":  "plugin://tencentvideo/video"
+  }
+}

@@ -1,0 +1,265 @@
+
+<!-- 标签页标题 -->
+<view class="tab">
+<!--  <view class="tab-item {{tab==0?'active':''}}" bindtap="changeItem" data-item="0">音乐推荐</view>
+  
+  <view class="tab-item {{tab==1?'active':''}}" bindtap="changeItem" data-item="1">播放器</view>
+  <view class="tab-item {{tab==2?'active':''}}" bindtap="changeItem" data-item="2">播放列表</view>-->
+</view>
+<!-- 内容区域 -->
+<view class="content">
+  <swiper current="{{item}}" bindchange="changeTab">
+    <swiper-item>
+    <!--接入搜狗音乐搜索功能-->
+    <view class="test-container" class="tab">
+	          <kugou-play/>
+            </view>
+            <view class="kugou" style="height:60rpx;">
+            <navigator url="plugin://kugouPlayer/search-page?keyword=爱">搜索歌曲</navigator>
+            </view>
+
+
+      <!-- 内容滚动区域 -->
+      <scroll-view class="content-info" scroll-y>
+
+      
+        <!-- 轮播图 -->
+        <swiper class="content-info-slide" indicator-color="rgba(255,255,255,.5)" indicator-active-color="#fff" indicator-dots circular autoplay>
+          <swiper-item>
+            <image src="http://p1.music.126.net/3X76UatszuEMw5ZdlbOUjw==/109951166124672973.jpg?imageView&quality=89" />
+          </swiper-item>
+          <swiper-item>
+            <image src="http://p1.music.126.net/KqQzj29JWF_mJTydbcNwUg==/109951166124714895.jpg?imageView&quality=89" />
+          </swiper-item>
+          <swiper-item>
+            <image src="http://p1.music.126.net/BAM0aQki-Vb3sOc0iPUNOw==/109951166124740848.jpg?imageView&quality=89" />
+          </swiper-item>
+          <swiper-item>
+            <image src="http://p1.music.126.net/lD5R-tPLwRBLKH--YQ_qcg==/109951166123918155.jpg?imageView&quality=89" />
+          </swiper-item>
+        </swiper>
+ 
+        <!-- 热门音乐 -->
+       
+        <!--
+        <view class="content-info-list">
+
+          <view class="list-title">推荐歌单</view>
+          <view class="list-inner">
+            <view class="list-item">
+              <image src="/images/cover.jpg" />
+              <view>紫罗兰</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover1.jpg" />
+              <view>五月之歌</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover2.jpg" />
+              <view>菩提树</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover3.jpg" />
+              <view>欢乐颂</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover4.jpg" />
+              <view>安魂曲</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover5.jpg" />
+              <view>摇篮曲</view>
+            </view> 
+          </view>
+        </view>
+
+        <view class="content-info-list">
+          <view class="list-title">热门音乐</view>
+          <view class="list-inner">
+            <view class="list-item">
+              <image src="/images/cover.jpg" />
+              <view>紫罗兰</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover1.jpg" />
+              <view>五月之歌</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover2.jpg" />
+              <view>菩提树</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover3.jpg" />
+              <view>欢乐颂</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover4.jpg" />
+              <view>安魂曲</view>
+            </view>
+            <view class="list-item">
+              <image src="/images/cover5.jpg" />
+              <view>摇篮曲</view>
+            </view> 
+          </view>
+        </view>-->
+      
+        <view class="content-info-portal">
+          <view>
+            <image src="/images/04.png" />
+            <text>私人FM</text>
+          </view>
+          <view>
+            <image src="/images/05.png" />
+            <text>每日歌曲推荐</text>
+          </view>
+          <view>
+            <image src="/images/06.png" />
+            <text>云音乐新歌榜</text>
+          </view>
+        </view>
+
+        <!--推荐歌单-->
+
+        <!--夏日直播盛典-->
+   
+
+<view class='out'>     <view>--推荐歌单--</view>
+  <scroll-view scroll-x scroll-into-view='item2'>
+    <view id='item1' class='item'>
+      <view class='inner'>
+        <image src="https://imgessl.kugou.com/custom/150/20201207/20201207134716994336.jpg" />
+        <view>悸动恋曲</view>
+       </view>
+    </view>
+    <view id='item2' class='item'>
+      <view class='inner'><image src="https://y.qq.com/music/photo_new/T002R300x300M000003eRE1h1qgZLE_2.jpg?max_age=2592000" /></view>
+      <view>去丧喷雾</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://y.qq.com/music/photo_new/T002R300x300M0000046fs8f4HKu2G_1.jpg?max_age=2592000" /></view>
+      <view>韩·夏</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://qpic.y.qq.com/music_cover/xjBX9k8QoGbAUicX1ialfQPNzIP2mImXuqoUnCghicEfEodV7Wt12qTOw/600?n=1" /></view>
+      <view>枯木逢春</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210608/20210608123201540662.jpg" /></view>
+      <view>生活明朗</view>
+    </view>
+  </scroll-view>
+</view>
+
+
+  
+
+<view class='out'>     <view>--我有音乐，你有酒吗？--</view>
+  <scroll-view scroll-x scroll-into-view='item2'>
+    <view id='item1' class='item'>
+      <view class='inner'>
+        <image src="https://imgessl.kugou.com/stdmusic/20210618/20210618180801496786.jpg" />
+        <view>悸动恋曲</view>
+       </view>
+    </view>
+    <view id='item2' class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210524/20210524130201514176.jpg" /></view>
+      <view>去丧喷雾</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210617/20210617095706730207.jpg" /></view>
+      <view>韩·夏</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210601/20210601205338903979.jpg" /></view>
+      <view>枯木逢春</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210625/20210625102146823164.jpg" /></view>
+      <view>生活明朗</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class='out'>     <view>--夏日直播盛典--</view>
+  <scroll-view scroll-x scroll-into-view='item2'>
+    <view id='item1' class='item'>
+      <view class='inner'>
+        <image src="https://imgessl.kugou.com/custom/150/20201207/20201207134716994336.jpg" />
+        <view>悸动恋曲</view>
+       </view>
+    </view>
+    <view id='item2' class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210528/20210528160603566463.jpg" /></view>
+      <view>去丧喷雾</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210624/20210624140507641609.jpg" /></view>
+      <view>韩·夏</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210614/20210614210001245875.jpg" /></view>
+      <view>枯木逢春</view>
+    </view>
+    <view class='item'>
+      <view class='inner'><image src="https://imgessl.kugou.com/stdmusic/20210608/20210608123201540662.jpg" /></view>
+      <view>生活明朗</view>
+    </view>
+  </scroll-view>
+</view>
+
+
+<!--音乐列表显示-->
+<view class="out">
+<text>为你推荐</text>
+<scroll-view class="content-playlist" scroll-y>
+  <view class="playlist-item" wx:for="{{playlist}}" wx:key="id" bindtap="change" data-index="{{index}}">
+    <image class="playlist-cover" src="{{item.coverImgUrl}}" />
+    <view class="playlist-info">
+      <view class="playlist-info-title">{{item.title}}</view>
+      <view class="playlist-info-singer">{{item.singer}}</view>
+    </view>
+    <view class="playlist-controls">
+      <text wx:if="{{index==playIndex}}">正在播放</text>
+    </view>
+  </view>
+</scroll-view>
+</view>
+
+
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+
+    
+      <!-- 播放器页面 -->
+      <include src="play.wxml" />
+    </swiper-item>
+    <swiper-item>
+      <include src="playlist.wxml" />
+    </swiper-item>
+  </swiper>
+</view>
+
+
+
+
+<!-- 底部播放器 -->
+<view class="player" >
+   
+    <image class="tab-item {{tab==1?'active':''}}" bindtap="changeItem" data-item="1" class="player-cover" src="{{play.coverImgUrl}}" />
+
+  <view class="player-info">
+        <view class="player-info-title">{{play.title}}</view>
+        <view class="player-info-singer">{{play.singer}}</view>
+  `</view>
+  <view class="player-controls">
+    <!-- 切换到播放列表 -->
+    <image src="/images/01.png" class="tab-item {{tab==2?'active':''}}" bindtap="changeItem" data-item="2"/>
+    <!-- 播放或暂停 -->
+    <image wx:if="{{state=='paused'}}" src="/images/02.png" bindtap="play" />
+    <image wx:else src="/images/02stop.png" bindtap="pause" />
+    <!-- 下一曲 -->
+    <image src="/images/03.png" bindtap="next" />
+  </view>
+</view>
+
